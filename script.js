@@ -16,12 +16,8 @@ convertBtn.addEventListener("click", function(){
         alert("Enter A valid positive number!")
         return
     } else {
-        lengthStr = `<p>${inputValue} meters = ${(inputValue * 3.281).toFixed(3)} feet | ${inputValue} feet = ${(inputValue /3.281).toFixed(3)} meters</</p>`
-        lengthOut.innerHTML = lengthStr
-        volumeStr = `<p>${inputValue} liter = ${(inputValue * 0.264).toFixed(3)} gallons | ${inputValue} gallons = ${(inputValue / 0.264).toFixed(3)} liters</p>`
-        volumeOut.innerHTML = volumeStr
-        massStr = `<p>${inputValue} kilogram = ${(inputValue * 2.204).toFixed(3)} pounds | ${inputValue} pounds = ${(inputValue / 2.204).toFixed(3)} kilograms</p>`
-        massOut.innerHTML = massStr
-
+          lengthOut.innerHTML= `<p>${inputValue} meters = ${(inputValue * 3.281).toFixed(3)} feet | ${inputValue} feet = ${(inputValue /3.281).toFixed(3)} meters</</p>`
+        volumeOut.innerHTML  = `<p>${inputValue} liter = ${(inputValue * 0.264).toFixed(3)} gallons | ${inputValue} gallons = ${(inputValue / 0.264).toFixed(3)} liters</p>`
+        massOut.innerHTML= `<p>${inputValue} kilogram = ${(inputValue * 2.204).toFixed(3)} pounds | ${inputValue} pounds = ${(inputValue / 2.204).toFixed(3)} kilograms</p>`
     }
 })
